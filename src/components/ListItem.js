@@ -2,22 +2,20 @@ import "./ListItem.css";
 import Card from "./UI/Card";
 import ItemDate from "./item/ItemDate/ItemDate";
 import NewItem from "./item/NewItem/NewItem";
+import Item from "./item/Item";
 import {useState} from "react";
 
 
 const ListItem = (props) => {
     const [item_name, setItemName] = useState(props.item_name);
     const itemNameClickHandler = () => {
-
         setItemName('updated!');
         console.log(item_name);
-
     }
-
-
 
     return (
         <Card className="list-item">
+
             <ItemDate date={props.item_date} />
             <div className="list-item__name">
                 <h1>{item_name}</h1>
@@ -36,6 +34,8 @@ const ListItem = (props) => {
             </ul>
             <button onClick={itemNameClickHandler} >Change Title</button>
         </Card>
+
+
     );
 }
 
