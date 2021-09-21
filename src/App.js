@@ -1,5 +1,6 @@
 import './App.css';
 import ListItem from "./components/ListItem";
+import NewItem from "./components/item/NewItem/NewItem";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
+                <NewItem />
 
                 <ListItem
                     item_id={itemList[0].item_id}
