@@ -19,7 +19,7 @@ const ListItem = (props) => {
         <Card className="list-item">
             <ItemDate date={props.item_date} />
             <div className="list-item__name">
-                <h1>{props.item_name}</h1>
+                <h1>{item_name}</h1>
             </div>
             <ul>
                 <li>item_id :: {props.item_id}</li>
