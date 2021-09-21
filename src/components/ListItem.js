@@ -1,6 +1,7 @@
 import "./ListItem.css";
 import Card from "./UI/Card";
 import ItemDate from "./item/ItemDate/ItemDate";
+import NewItem from "./item/NewItem/NewItem";
 import {useState} from "react";
 
 
